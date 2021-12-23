@@ -1,7 +1,7 @@
 pipeline {
   agent any
   environment {
-    DOCKERHUB_USER = "itplnsdk"
+    DOCKERHUB_USER = "docker"
     BUILD_HOST = "root@172.29.240.176"
     PROD_HOST = "root@172.29.240.190"
     BUILD_TIMESTAMP = sh(script: "date +%Y%m%d-%H%M%S", returnStdout: true).trim()
