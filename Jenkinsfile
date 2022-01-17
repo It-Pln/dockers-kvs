@@ -3,7 +3,7 @@ pipeline {
   environment {
     DOCKERHUB_USER = "itplnsdk"
     BUILD_HOST = "root@172.29.240.139"
-    PROD_HOST = "root@172.29.240.190"
+    PROD_HOST = "root@172.29.240.235"
     BUILD_TIMESTAMP = sh(script: "date +%Y%m%d-%H%M%S", returnStdout: true).trim()
   }
   stages {
